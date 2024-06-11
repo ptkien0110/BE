@@ -1,0 +1,38 @@
+import { ObjectId } from 'mongodb'
+import { ProductDestroyStatus, ProductStatus } from '~/constants/enum'
+
+export interface ProductReqBody {
+  name: string
+  images?: string[]
+  description?: string
+  category: string
+  price_for_customer: number
+  price_for_seller: number
+  stock: number
+  point?: number
+  profit?: number
+  discount?: number
+  discount_for_seller?: number
+  sales?: number
+}
+
+export interface UpdateProductReqBody {
+  name?: string
+  description?: string
+  category?: string
+  price_for_customer?: number
+  price_for_seller?: number
+  stock?: number
+  point?: number
+  profit?: number
+  discount?: number
+  destroy?: ProductDestroyStatus
+  discount_for_seller?: number
+  sales?: number
+  status?: ProductStatus
+}
+
+export interface Image {
+  path: string
+  filename: string
+}
