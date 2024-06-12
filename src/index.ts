@@ -18,6 +18,7 @@ const corsOptions = {
   "https://pdp_tikpii.surge.sh",
   "https://mall_tikpii.surge.sh",
   "https://mybiz_tikpii.surge.sh",
+  "http://biz_tikpii.surge.sh",
   "http://localhost:3000",
   "http://localhost:3001"],  // Đổi theo frontend của bạn
   credentials: true, // Cho phép gửi cookie
